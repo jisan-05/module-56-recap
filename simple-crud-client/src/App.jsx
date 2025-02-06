@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
         <>
             <div>
                 <h1>Simple Crud</h1>
+
+                <Link className="btn btn-primary" to='/users'>User List</Link>
+
                 <form onSubmit={handleAddUser}>
                   <input type="text" name="name" />
                   <br />
